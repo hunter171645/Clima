@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Meteorológica</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1> Consulta Meteorológica</h1>
+        <p>Consulte o clima de outras cidades e paises</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Pesquisar cidade</h2>
+
+            <form id="formulario">
+                <input type="text" id="cidade" placeholder="Digite uma cidade" required>
+                <button type="submit" id="botaoBuscar">Buscar</button>
+            </form>
+
+            <p id="mensagem"></p>
+            <div id="resultados"></div>
+        </section>
+
+        <section id="secaoClima" hidden>
+            <h2>Clima atual</h2>
+            <div id="climaAtual"></div>
+            <button id="botaoFavorito"> Adicionar favorito</button>
+        </section>
+
+        <section id="secaoPrevisao" hidden>
+            <h2>Previsão para os proximos dias</h2>
+            <div id="previsao"></div>
+        </section>
+
+        <section>
+            <h2>Cidades favoritas</h2>
+            <div id="favoritos"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        Dados: <a href="https://open-meteo.com/">Open-Meteo</a>
+    </footer>
+
+</body>
+</html>
